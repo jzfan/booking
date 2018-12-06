@@ -1,0 +1,175 @@
+{layout name="index@layout/layout" /}
+<style type="text/css">
+	#d1, #d2, #address {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+	#d1 {
+		background-color: black;
+		color: white;
+		padding: 80px;
+	}
+	#d1 > h1 {
+		font-size: 50px;
+		padding:30px 0;
+	}
+	#d1 .btn-default {
+		margin-top: 40px;
+		padding: 15px 35px;
+	}
+	#d2 {
+		background-color: white;
+		padding: 40px 0;
+	}
+	#d2 > h1 , #address > h1{
+		margin: 50px 0 80px;
+	}
+	#d2 > ul {
+		font-size: 25px;
+	}
+	#d2 >.container> ul >li >a {
+		color: #777;
+		border: 1px solid #000;
+		margin: 15px;
+	}
+	#d2 .nav-pills>li.active>a, #d2 .nav-pills>li.active>a:focus, #d2 .nav-pills>li>a:hover {
+    color: #fff;
+    background-color: #000;
+}
+#d2 .nav>li>a:focus, .nav>li>a:hover {
+	color: #fff;
+    background-color: #000;
+}
+#d2 small {
+	color: #000;
+}
+#d2 .thumbnail {
+	background-color: #d0d0d0;
+}
+#d2 .thumbnail .caption {
+    padding: 15px;
+    background-color: #8e8e8e;
+}
+#address{
+	background-color: #f0f0f0;
+	padding: 40px 0;
+}
+#card {
+	padding: 15px;
+	margin: 10px 0 15px;
+}
+</style>
+<div>
+	<div id='d1'  class="text-center">
+		<h1>文案文案文案文案</h1>
+		<h3>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</h3>
+		<h3>文字文字文字文字文字文字文字文字文字</h3>
+	    <p><a class="btn btn-default btn-lg" href="#" role="button">点餐</a></p>
+	</div>
+	<div id='d2'>
+		<div class="container" id='today'>
+		<h1 class="text-center">今日推荐</h1>
+		<ul class="nav nav-pills nav-tabs nav-justified">
+		  <li role="presentation" class="active"><a href="#" role="button">主菜单</a></li>
+		  <li role="presentation"><a href="#">小吃</a></li>
+		  <li role="presentation"><a href="#">沙拉</a></li>
+		  <li role="presentation"><a href="#">新品</a></li>
+		</ul>
+		
+		<div class="row">
+		  <div class="col-md-4">
+		    <div class="thumbnail">
+		      <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=320&w=320" alt="...">
+		      <div class="caption">
+				<h4><small>￥</small> 2.00 <small class="pull-right" style="margin-top: 10px">X1</small></h4>
+				<h4>菜品名</h4>
+		        <div class="btn-group" role="group" aria-label="..." style="width:100%">
+		          <button type="button" class="btn btn-default btn-large" style="width: 70%;">下单</a>
+		          <button type="button" class="btn btn-default btn-large" style="width: 30%"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+		        </div>
+		   	</div>
+		    </div>
+		  </div>
+
+		    <div class="col-md-4">
+		      <div class="thumbnail">
+		        <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=320&w=320" alt="...">
+		        <div class="caption">
+		  		<h4><small>￥</small> 2.00 <small class="pull-right" style="margin-top: 10px">X1</small></h4>
+		  		<h4>菜品名</h4>
+		          <div class="btn-group" role="group" aria-label="..." style="width:100%">
+		            <button type="button" class="btn btn-default btn-large" style="width: 70%;">下单</a>
+		            <button type="button" class="btn btn-default btn-large" style="width: 30%"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+		          </div>
+		     	</div>
+		      </div>
+		    </div>
+
+		      <div class="col-md-4">
+		        <div class="thumbnail">
+		          <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=320&w=320" alt="...">
+		          <div class="caption">
+		    		<h4><small>￥</small> 2.00 <small class="pull-right" style="margin-top: 10px">X1</small></h4>
+		    		<h4>菜品名</h4>
+		            <div class="btn-group" role="group" aria-label="..." style="width:100%">
+		              <button type="button" class="btn btn-default btn-large" style="width: 70%;">下单</a>
+		              <button type="button" class="btn btn-default btn-large" style="width: 30%"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+		            </div>
+		       	</div>
+		        </div>
+		      </div>
+		</div>
+		</div>
+	</div>
+	<div id='address'>
+		<h1 class="text-center">配送地区</h1>
+		<div class="container">
+		<div class="row">
+			<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 小区</h3>
+			<div class="col-md-3">
+				<div id='card'>
+					<h4>小区名字</h4>
+					<p>取餐点：楼名</p>
+					<p>午餐配送时间：12:00-14:00</p>
+					<p>晚餐配送时间：17:00-18:00</p>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div id='card'>
+					<h4>小区名字</h4>
+					<p>取餐点：楼名</p>
+					<p>午餐配送时间：12:00-14:00</p>
+					<p>晚餐配送时间：17:00-18:00</p>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="row">
+			<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 学校</h3>
+			<div class="col-md-3">
+				<div id='card'>
+					<h4>学校名字</h4>
+					<p>取餐点：楼名</p>
+					<p>午餐配送时间：12:00-14:00</p>
+					<p>晚餐配送时间：17:00-18:00</p>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div id='card'>
+					<h4>学校名字</h4>
+					<p>取餐点：楼名</p>
+					<p>午餐配送时间：12:00-14:00</p>
+					<p>晚餐配送时间：17:00-18:00</p>
+				</div>
+			</div>
+
+			
+		</div>
+
+		</div>
+	</div>
+</div>
