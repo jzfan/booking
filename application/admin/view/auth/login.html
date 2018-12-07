@@ -1,0 +1,29 @@
+{layout name="admin@layout/layout" /}
+<style type="text/css">
+	body > .container {
+	    padding: 60px 15px 0;
+	}
+</style>
+<div class="container">
+	<form class="form-signin" method='POST' action='/admin/auth/login'>
+	        <h2 class="form-signin-heading">请登录</h2>
+	        {if condition="$Think.session.error.code neq 100"/}
+	        <br>
+	        <div class="alert alert-danger" role="alert">{$Think.session.error.message}</div>
+	        {/if}
+	        <br>
+	        <label for="inputEmail" class="sr-only">用户名</label>
+	        <input type="text" class="form-control" placeholder="用户名" required="" autofocus="" name='name'
+	        value="superman"
+	        >
+	        <label for="inputPassword" class="sr-only">密码</label>
+	        <br>
+	        <input type="password" id="inputPassword" class="form-control" placeholder="密码" required="" name='password'
+			value="rasmuslerdorf" 
+	        >
+	        <div class="checkbox">
+	        </div>
+	        <br>
+	        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+	      </form>
+    </div>
